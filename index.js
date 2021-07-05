@@ -15,6 +15,4 @@ function WGS84toITM (lat, lng) {
   return { x, y };
 }
 
-module.exports = ITMtoWGS84;
-module.exports.ITMtoWGS84 = ITMtoWGS84;
-module.exports.WGS84toITM = WGS84toITM;
+module.exports = { ITMtoWGS84, WGS84toITM };

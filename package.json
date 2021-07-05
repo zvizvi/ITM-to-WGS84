@@ -1,0 +1,17 @@
+{
+  "name": "itm-wgs84",
+  "version": "1.0.0",
+  "description": "Convert easily between ITM (Israel Transverse Mercator) coordinates to WGS84 world geodetic system",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zvizvi/ITM-to-WGS84.git"
+  },
+  "dependencies": {
+    "proj4": "^2.7.4"
+  },
+  "keywords": [
+    "ITM",
+    "WGS84"
+  ]
+}
