@@ -14,9 +14,9 @@ npm install itm-wgs84
 const { ITMtoWGS84, WGS84toITM } = require('itm-wgs84');
 
 ITMtoWGS84 (x, y);
-// return: { lat: 26.0623100, lng: 33.0120379 }
+// return: { lat: 26.0623100, long: 33.0120379 }
 
-WGS84toITM (lat, lng);
+WGS84toITM (lat, long);
 // return: { x: 31.7777692, y: 35.2350114 }
 
 ```

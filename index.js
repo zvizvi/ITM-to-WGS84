@@ -6,12 +6,12 @@ proj4.defs('EPSG:2039', '+proj=tmerc +lat_0=31.73439361111111 +lon_0=35.20451694
 proj4.defs('EPSG:4326', '+title=WGS 84 (long/lat) +proj=longlat +ellps=WGS84 +datum=WGS84 +units=degrees');
 
 function ITMtoWGS84 (x, y) {
-  const [lng, lat] = proj4(proj4('EPSG:2039'), proj4('EPSG:4326'), [x, y]);
-  return { lat, lng };
+  const [long, lat] = proj4(proj4('EPSG:2039'), proj4('EPSG:4326'), [x, y]);
+  return { lat, long };
 }
 
-function WGS84toITM (lat, lng) {
-  const [x, y] = proj4(proj4('EPSG:4326'), proj4('EPSG:2039'), [lng, lat]);
+function WGS84toITM (lat, long) {
+  const [x, y] = proj4(proj4('EPSG:4326'), proj4('EPSG:2039'), [long, lat]);
   return { x, y };
 }
 
